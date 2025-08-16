@@ -1,3 +1,46 @@
-/* Tailwind CSSを使用しているため、`index.html`にTailwindのCDNを読み込むだけでスタイルは適用されます。 */
-/* 個別のカスタムCSSが必要な場合のみここに記述します。 */
-/* ただし、`index.html`の`<style>`タグ内に記述したモーダルのスタイルはそのまま使用してください。 */
+:root {
+  /* ===== コーポレートカラー ===== */
+  --color-brand-main: #76A5B1;   /* メインブルー */
+  --color-brand-light: #A7C9D1;  /* 明るめブルー（背景・サブ要素） */
+  --color-brand-dark: #3F6D76;   /* 濃いめブルー（見出し・強調） */
+
+  /* ===== ニュートラルカラー ===== */
+  --color-neutral-white: #FFFFFF; /* 背景・余白 */
+  --color-neutral-light: #E6E6E6; /* 区切り線・カード背景 */
+  --color-neutral-dark: #333333;  /* 本文テキスト */
+
+  /* ===== アクセントカラー ===== */
+  --color-accent-orange: #F4A261; /* CTAボタン・リンク */
+  --color-accent-green: #6BAF7D;  /* 成功・承認メッセージ */
+}
+
+/* ===== 使用例 ===== */
+
+/* 背景 */
+body {
+  background-color: var(--color-neutral-white);
+  color: var(--color-neutral-dark);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* 見出し */
+h1, h2, h3 {
+  color: var(--color-brand-dark);
+}
+
+/* ボタン */
+.button-primary {
+  background-color: var(--color-brand-main);
+  color: var(--color-neutral-white);
+}
+
+.button-accent {
+  background-color: var(--color-accent-orange);
+  color: var(--color-neutral-white);
+}
+
+/* 成功メッセージ */
+.alert-success {
+  background-color: var(--color-accent-green);
+  color: var(--color-neutral-white);
+}
